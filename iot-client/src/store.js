@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
 	state:{
-		url: "http://192.168.247.140:8080",
+		url: "http://192.168.228.100:8080",
 		test: 'HELLO_WORLD',
 		userName: 'appUser',
 		userCTF: {},
