@@ -54,7 +54,7 @@
 					<!-- 主体 -->
 					<el-main style="height: 90%;"><router-view></router-view></el-main>
 					<!-- 页脚 -->
-					<el-footer style="height: 10%;"><div>@CopyRight 南京工业大学-计算机科学与技术学院-计算机科学与技术(嵌入式)-计软1701-陆于洋-1405170121</div></el-footer>
+					<el-footer style="height: 10%;"><div>@CopyRight BamLubi 1126458447@qq.com</div></el-footer>
 				</el-container>
 			</el-container>
 		</el-container>

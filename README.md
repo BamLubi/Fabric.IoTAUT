@@ -17,6 +17,57 @@
 
 ## 使用流程
 
-0. 请将`./iot-netwok/bin.zip`解压。
+### 区块链网络模块(iot-network)
 
-1. 在`Fabric教程`文件夹中有网络部署的一些文档，具体的步骤之后再整理。
+```shell
+cd ./iot-network
+# 1. 解压bin文件(fabric工具包)
+$ tar -zxvf ./bin.tar.gz
+# 2. 获取docker容器镜像
+$ docker pull hyperledger/fabric-peer:2.2.2
+$ docker pull hyperledger/fabric-orderer:2.2.2
+$ docker pull hyperledger/fabric-ca:1.4.9
+$ docker pull hyperledger/fabric-tools:2.2.2
+$ docker pull hyperledger/fabric-ccenv:2.2.2
+# 3. 使用--help查看相关指令
+$ ./network.sh --help
+# 4. 启动节点并创建通道
+$ ./network.sh up createChannel -ca
+# 5. 部署链码
+$ ./network.sh deployCC
+# 6. 停止fabric
+$ ./network.sh down
+
+## 除了使用自动化部署工具之外，也可以使用工具包自行部署
+## 在./Fabric教程中有提及
+
+## 需要修改的文件夹介绍
+# ./chaincode -- 存放链码
+# ./configtx -- 通道配置文件
+# ./organizations/cryptogen -- 区块链组织架构
+# ./docker -- docker节点配置
+
+```
+
+### 服务端应用程序模块(iot-server)
+
+```shell
+# Express项目
+$ npm run serve
+```
+
+### 客户端应用程序模块(iot-client)
+
+```shell
+# Vue项目
+$ npm run serve
+```
+
+## 参考网址
+
+1.   fabric工具命令手册：http://cw.hubwiz.com/card/c/fabric-command-manual/1/1/27/
+
+2.   fabric-sdk-for-nodejs：https://hyperledger.github.io/fabric-sdk-node
+3.   区块链官方教程：https://hyperledger-fabric.readthedocs.io/zh_CN/release-2.2/
+4.   B站fabric教程：https://www.bilibili.com/video/BV1DA41147vT
+

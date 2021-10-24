@@ -1,3 +1,5 @@
 /iot-client/node_modules
+/iot-client/dist
 /iot-network/bin
+/iot-network/bin.tar.gz
 dist
