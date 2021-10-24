@@ -56,6 +56,7 @@ $ ./network.sh down
 
 ```shell
 # Express项目
+$ npm install
 $ npm run serve
 ```
 
@@ -63,6 +64,7 @@ $ npm run serve
 
 ```shell
 # Vue项目
+$ npm install
 $ npm run serve
 ```
 
