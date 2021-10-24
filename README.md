@@ -13,7 +13,7 @@
 
 系统的整体架构如下图所示：
 
-![系统图](img/系统图.png)
+<img src="img/系统图.png" alt="系统图" style="zoom: 50%;" />
 
 ## 使用流程
 
@@ -22,6 +22,9 @@
 ```shell
 cd ./iot-network
 # 1. 解压bin文件(fabric工具包)
+# bin.tar.gz下载地址：
+# 链接：https://pan.baidu.com/s/1K-PgsmqZkr4eKUlMdPGkEQ 
+# 提取码：1tdp
 $ tar -zxvf ./bin.tar.gz
 # 2. 获取docker容器镜像
 $ docker pull hyperledger/fabric-peer:2.2.2
