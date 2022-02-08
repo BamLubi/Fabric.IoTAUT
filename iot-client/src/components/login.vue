@@ -19,7 +19,7 @@
 					</el-form-item>
 				</el-form>
 			</el-main>
-			<el-footer><div>@CopyRight 南京工业大学-计算机科学与技术学院-计算机科学与技术(嵌入式)-计软1701-陆于洋-1405170121</div></el-footer>
+			<el-footer><div>@CopyRight BamLubi 1126458447@qq.com</div></el-footer>
 		</el-container>
 		<!-- 显示文件内容 -->
 		<el-drawer title="文件内容" :visible.sync="showFileContent" direction="rtl" size="30%">
